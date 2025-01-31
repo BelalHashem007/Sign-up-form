@@ -16,6 +16,10 @@ body {
     display: flex;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #759f89;
 }
 .img-container {
     position: relative;
@@ -121,8 +125,19 @@ fieldset > div > div:first-child {
 }
 input {
     font:inherit;
-    border: none;
-    border-color: #E5E7EB;
+    border:1px solid #E5E7EB;
     border-radius: 5px;
     background-color: #f7f3f3;
+    width: 235px;
+}
+input[type="password"]:invalid {
+    border: 1px solid red;
+}
+input:focus {
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.3);
+}
+form >p {
+    margin-bottom: 125px;
 }
