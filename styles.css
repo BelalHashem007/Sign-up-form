@@ -13,16 +13,12 @@
 }
 body {
     height: 100vh;
+    display: flex;
 }
 .img-container {
     position: relative;
-    height: inherit;
-}
-.odin-logo {
-    position: absolute;
-    width: 100px;
-    left: 600px;
-    top: 20px;
+    height: 100%;
+    max-width: 650px;
 }
 .bg-image {
     max-height: 100%;
@@ -36,11 +32,34 @@ body {
     top: 200px;
     background-color: rgba(22 21 21 / 50%);
 }
+.odin-logo {
+    position: absolute;
+    width: 100px;
+    left: 200px;
+    top: 20px;
+}
 .logo-text {
     position: absolute;
-    left: 700px;
+    left: 300px;
     top: 35px;
     font-family: 'NorseBold';
     font-size: 7rem;
     color: white;
+}
+.img-credit {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    left: 200px;
+    font-size: 1.2rem;
+}
+.img-credit a {
+    color: #00ff0a;
+}
+.form-heading {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+p {
+    width: 600px;
 }
