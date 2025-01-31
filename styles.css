@@ -14,11 +14,13 @@
 body {
     height: 100vh;
     display: flex;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 1rem;
 }
 .img-container {
     position: relative;
     height: 100%;
-    max-width: 650px;
+    min-width: 650px;
 }
 .bg-image {
     max-height: 100%;
@@ -42,7 +44,7 @@ body {
     position: absolute;
     left: 300px;
     top: 35px;
-    font-family: 'NorseBold';
+    font-family: 'NorseBold';   
     font-size: 7rem;
     color: white;
 }
@@ -56,10 +58,71 @@ body {
 .img-credit a {
     color: #00ff0a;
 }
-.form-heading {
-    font-size: 1.3rem;
-    font-weight: bold;
+form {
+    background-color: #ecf0f3;
+    width: 100%;
 }
 p {
-    width: 600px;
+    width: 650px;
+}
+.form-heading, .field-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+fieldset{
+    background-color: rgb(255 255 255);
+    padding-bottom: 20px;
+    border: none;
+    box-shadow: 4px 4px 5px #d9d6d6;
+}
+.field-title {
+    margin-bottom: 15px;
+}
+
+.form-heading,fieldset, form>p {
+    padding-left: 50px;
+}
+button {
+    margin: 30px 0 30px 50px;
+    padding: 15px;
+    color: white;
+    background-color: #596D48;
+    border-radius: 8px;
+    text-shadow: 1px 1px 2px white;
+    width: 200px;
+    border: none;
+}
+button:hover {
+    box-shadow: none;
+    opacity: 0.8;
+    cursor: pointer;
+}
+.form-heading {
+    margin-top: 125px;
+}
+.italic {
+    font-style: italic;
+}
+input,button,label {
+    font-size: inherit;
+}
+p+p+p {
+    margin: 15px 0 40px 0 ;
+}
+.first-row, .second-row, .third-row {
+    display: flex;
+   margin: 7px;
+}
+label {
+    display: block;
+}
+fieldset > div > div:first-child {
+    margin-right: 50px;
+}
+input {
+    font:inherit;
+    border: none;
+    border-color: #E5E7EB;
+    border-radius: 5px;
+    background-color: #f7f3f3;
 }
